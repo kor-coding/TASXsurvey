@@ -494,20 +494,157 @@ kbd{background:var(--surface2);border:1.5px solid var(--border);border-radius:4p
 <div id="preview" class="" style="display: flex;">
   <div class="prev-nav">
     <div class="logo" style="font-size:17px;gap:7px"><div class="logo-i" style="width:24px;height:24px;font-size:12px">⚡</div>Form<span>Flow</span></div>
-    <div id="prevTitle" style="font-family:var(--fd);font-weight:600;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:240px;color:var(--text)"></div>
+    <div id="prevTitle" style="font-family:var(--fd);font-weight:600;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:240px;color:var(--text)">QuantifAI Survey</div>
     <div style="display:flex;align-items:center;gap:8px">
       
       
     </div>
   </div>
-  <div class="prog-bar"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
-  <div class="form-view" id="formView"></div>
+  <div class="prog-bar"><div class="prog-fill" id="progFill" style="width: 0%;"></div></div>
+  <div class="form-view" id="formView"><div class="form-slide" id="sl-welcome"><div class="slide-inner" style="text-align:center;max-width:600px">
+    
+    <h1 class="welcome-title">Welcome! 👋</h1>
+    <p class="welcome-sub">This form will only take a few minutes.</p>
+    <div class="resume-banner"><div class="rb-info"><div class="rb-title">📌 You have saved progress</div><div class="rb-meta">Last saved Jul 2, 2026, 02:49 PM</div></div><div style="display:flex;gap:7px;flex-wrap:wrap"><button class="btn btn-ghost btn-sm" onclick="discardProgress()">Start over</button><button class="btn btn-primary btn-sm" onclick="resumeProgress()">Resume →</button></div></div>
+    <button class="btn-next" style="font-size:15px;padding:13px 32px;margin:0 auto" onclick="nextSlide()">Let's go →</button>
+    <div class="kbd-hint" style="justify-content:center;margin-top:12px"><kbd>Enter</kbd> to begin</div>
+  </div></div><div class="section-slide slide-up active" id="sl-c8d9pvl"><div class="section-slide-inner">
+    <div class="section-header">
+      <div class="slide-num">Section · 1 question</div>
+      <h2 style="font-family:var(--fd);font-size:clamp(20px,2.8vw,32px);font-weight:600;letter-spacing:-.5px;line-height:1.2;margin-bottom:4px;color:var(--text)">Select Region</h2>
+      
+    </div>
+    <div class="section-qs"><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">Select Your Region<span class="req-badge">Required</span></div>
+      
+      <div class="s-opts" id="a-db42js4"><div class="s-opt selected" data-val="Singapore" onclick="chooseOpt('db42js4',this,false)"><span class="opt-key">A</span>Singapore</div><div class="s-opt " data-val="Hongkong" onclick="chooseOpt('db42js4',this,false)"><span class="opt-key">B</span>Hongkong</div></div>
+    </div></div>
+    <div class="s-nav" style="margin-top:28px;padding-bottom:28px">
+      <button class="btn-next" onclick="nextSlide()">
+        Continue →
+      </button>
+    </div>
+  </div></div><div class="section-slide" id="sl-508s2ln"><div class="section-slide-inner">
+    <div class="section-header">
+      <div class="slide-num">Section · 5 questions</div>
+      <h2 style="font-family:var(--fd);font-size:clamp(20px,2.8vw,32px);font-weight:600;letter-spacing:-.5px;line-height:1.2;margin-bottom:4px;color:var(--text)">A little about you</h2>
+      
+    </div>
+    <div class="section-qs"><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">What's your name?<span class="req-badge">Required</span></div>
+      <p class="slide-desc" style="margin-bottom:14px">We'd love to know who we're talking to</p>
+      <input class="s-input" type="text" id="a-rrhcjsh" placeholder="Type your answer…" value="test" oninput="S.answers['rrhcjsh']=this.value;autoSaveProgress()">
+    </div><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">Your company name<span class="req-badge">Required</span></div>
+      <p class="slide-desc" style="margin-bottom:14px">Help us to know a little bit more about you</p>
+      <input class="s-input" type="text" id="a-l8ftt2s" placeholder="Type your answer…" value="test" oninput="S.answers['l8ftt2s']=this.value;autoSaveProgress()">
+    </div><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">What's your role? <span class="req-badge">Required</span></div>
+      
+      <div class="three-grid" id="a-bboayvs"><div class="three-btn selected" data-val="Option A" onclick="chooseThree('bboayvs',this)"><span class="t-ico">Consultant QS</span><span>Option A</span></div><div class="three-btn " data-val="Option B" onclick="chooseThree('bboayvs',this)"><span class="t-ico">Contractor Office QS</span><span>Option B</span></div><div class="three-btn " data-val="Option C" onclick="chooseThree('bboayvs',this)"><span class="t-ico">Contractor Project QS</span><span>Option C</span></div></div>
+    </div><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">Which stage(s) do you do quantity take-off?</div>
+      
+      <div class="three-grid" id="a-b1tx69v"><div class="three-btn " data-val="Tender Stage" onclick="chooseThree('b1tx69v',this)"><span>Tender Stage</span></div><div class="three-btn " data-val="Construction Stage" onclick="chooseThree('b1tx69v',this)"><span>Construction Stage</span></div><div class="three-btn " data-val="Tender &amp; Construction Stage" onclick="chooseThree('b1tx69v',this)"><span>Tender &amp; Construction Stage</span></div></div>
+    </div><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">How long have you been using TAS/TRB?<span class="req-badge">Required</span></div>
+      <p class="slide-desc" style="margin-bottom:14px">Roughly in years or months</p>
+      <input class="s-input" type="text" id="a-q8svmso" placeholder="Type your answer…" value="test" oninput="S.answers['q8svmso']=this.value;autoSaveProgress()">
+    </div></div>
+    <div class="s-nav" style="margin-top:28px;padding-bottom:28px">
+      <button class="btn-back" onclick="prevSlide()">↑ Back</button><button class="btn-next" onclick="nextSlide()">
+        Continue →
+      </button>
+    </div>
+  </div></div><div class="section-slide" id="sl-3w2vc22"><div class="section-slide-inner">
+    <div class="section-header">
+      <div class="slide-num">Section · 4 questions</div>
+      <h2 style="font-family:var(--fd);font-size:clamp(20px,2.8vw,32px);font-weight:600;letter-spacing:-.5px;line-height:1.2;margin-bottom:4px;color:var(--text)">QuantifAI Overall Evaluation</h2>
+      <p class="slide-desc" style="margin-bottom:0">Tell us how it went</p>
+    </div>
+    <div class="section-qs"><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">From the scale of 1-10, how satisfied are you with the QuantifAI software?<span class="req-badge">Required</span></div>
+      <p class="slide-desc" style="margin-bottom:14px">10 = amazing!</p>
+      <div class="s-rating" id="a-44m4kqw"><div class="rate-btn sel" onclick="chooseRating('44m4kqw',1,this)">1</div><div class="rate-btn sel" onclick="chooseRating('44m4kqw',2,this)">2</div><div class="rate-btn sel" onclick="chooseRating('44m4kqw',3,this)">3</div><div class="rate-btn sel" onclick="chooseRating('44m4kqw',4,this)">4</div><div class="rate-btn sel" onclick="chooseRating('44m4kqw',5,this)">5</div><div class="rate-btn sel" onclick="chooseRating('44m4kqw',6,this)">6</div><div class="rate-btn sel" onclick="chooseRating('44m4kqw',7,this)">7</div><div class="rate-btn sel" onclick="chooseRating('44m4kqw',8,this)">8</div><div class="rate-btn sel" onclick="chooseRating('44m4kqw',9,this)">9</div><div class="rate-btn sel" onclick="chooseRating('44m4kqw',10,this)">10</div></div><div style="display:flex;justify-content:space-between;margin-top:7px"><span style="font-size:10px;color:var(--muted);font-weight:600">Not likely</span><span style="font-size:10px;color:var(--muted);font-weight:600">Very likely</span></div>
+    </div><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">On the scale of 1-10, how likely would you recommend QuantifAI to your friends?<span class="req-badge">Required</span></div>
+      <p class="slide-desc" style="margin-bottom:14px">10 the most likely</p>
+      <div class="s-rating" id="a-3ehuj6c"><div class="rate-btn sel" onclick="chooseRating('3ehuj6c',1,this)">1</div><div class="rate-btn sel" onclick="chooseRating('3ehuj6c',2,this)">2</div><div class="rate-btn sel" onclick="chooseRating('3ehuj6c',3,this)">3</div><div class="rate-btn sel" onclick="chooseRating('3ehuj6c',4,this)">4</div><div class="rate-btn sel" onclick="chooseRating('3ehuj6c',5,this)">5</div><div class="rate-btn sel" onclick="chooseRating('3ehuj6c',6,this)">6</div><div class="rate-btn sel" onclick="chooseRating('3ehuj6c',7,this)">7</div><div class="rate-btn sel" onclick="chooseRating('3ehuj6c',8,this)">8</div><div class="rate-btn sel" onclick="chooseRating('3ehuj6c',9,this)">9</div><div class="rate-btn " onclick="chooseRating('3ehuj6c',10,this)">10</div></div><div style="display:flex;justify-content:space-between;margin-top:7px"><span style="font-size:10px;color:var(--muted);font-weight:600">Not likely</span><span style="font-size:10px;color:var(--muted);font-weight:600">Very likely</span></div>
+    </div><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">Compared with the previous version (TAS &amp; TRB), roughly how many times faster do you feel QuantifAI will be?<span class="req-badge">Required</span></div>
+      
+      <div class="s-opts" id="a-qzdfmgq"><div class="s-opt" data-val="Greatly faster (over 3 times)" onclick="chooseOpt('qzdfmgq',this,false)"><span class="opt-key">A</span>Greatly faster (over 3 times)</div><div class="s-opt selected" data-val=" Obviously faster (2~3 times)" onclick="chooseOpt('qzdfmgq',this,false)"><span class="opt-key">B</span> Obviously faster (2~3 times)</div><div class="s-opt" data-val=" Slightly faster (1~2 times) " onclick="chooseOpt('qzdfmgq',this,false)"><span class="opt-key">C</span> Slightly faster (1~2 times) </div></div>
+    </div><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">Compared with the Manual way (Excel or other way), roughly how many times faster is QuantifAI in general?<span class="req-badge">Required</span></div>
+      
+      <div class="s-opts" id="a-hwqmgo7"><div class="s-opt selected" data-val="Greatly faster (over 6 times)" onclick="chooseOpt('hwqmgo7',this,false)"><span class="opt-key">A</span>Greatly faster (over 6 times)</div><div class="s-opt" data-val=" Obviously faster (4~6 times)" onclick="chooseOpt('hwqmgo7',this,false)"><span class="opt-key">B</span> Obviously faster (4~6 times)</div><div class="s-opt" data-val=" Slightly faster (2~4 times) " onclick="chooseOpt('hwqmgo7',this,false)"><span class="opt-key">C</span> Slightly faster (2~4 times) </div></div>
+    </div></div>
+    <div class="s-nav" style="margin-top:28px;padding-bottom:28px">
+      <button class="btn-back" onclick="prevSlide()">↑ Back</button><button class="btn-next" onclick="nextSlide()">
+        Continue →
+      </button>
+    </div>
+  </div></div><div class="section-slide" id="sl-szhah29"><div class="section-slide-inner">
+    <div class="section-header">
+      <div class="slide-num"><div class="pill pill-orange" style="display:inline-flex">⊞ Matrix</div></div>
+      <h2 style="font-family:var(--fd);font-size:clamp(20px,2.8vw,32px);font-weight:600;letter-spacing:-.5px;line-height:1.2;margin-bottom:4px;color:var(--text)">
+        Please rate us!
+        <span class="req-badge" style="margin-left:8px">Required</span>
+      </h2>
+      
+    </div>
+    <div style="flex:1">
+      <div class="matrix-table-wrap">
+        <table class="matrix-table">
+          <thead><tr>
+            <th style="text-align:left">Question</th>
+            <th>Satisfaction</th>
+          </tr></thead>
+          <tbody><tr><td style="padding:8px 14px;font-weight:600;font-size:13px;color:var(--text);background:var(--surface2);border-bottom:1px solid var(--border);border-right:2px solid var(--border);white-space:nowrap">2 in 1 <span class="mat-row-type-badge" style="font-size:8px;padding:1px 5px">rating</span></td><td style="padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);border-right:1px solid var(--border)"><div class="mat-stars" style="display:flex;gap:2px;justify-content:center"><span class="mat-star " onclick="rateMatCell('szhah29','bvpxopg::Satisfaction',1,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','bvpxopg::Satisfaction',2,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','bvpxopg::Satisfaction',3,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','bvpxopg::Satisfaction',4,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','bvpxopg::Satisfaction',5,this)">★</span></div></td></tr><tr><td style="padding:8px 14px;font-weight:600;font-size:13px;color:var(--text);background:var(--surface2);border-bottom:1px solid var(--border);border-right:2px solid var(--border);white-space:nowrap">AI Beam Rebar Identification <span class="mat-row-type-badge" style="font-size:8px;padding:1px 5px">rating</span></td><td style="padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);border-right:1px solid var(--border)"><div class="mat-stars" style="display:flex;gap:2px;justify-content:center"><span class="mat-star " onclick="rateMatCell('szhah29','hddyghj::Satisfaction',1,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','hddyghj::Satisfaction',2,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','hddyghj::Satisfaction',3,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','hddyghj::Satisfaction',4,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','hddyghj::Satisfaction',5,this)">★</span></div></td></tr><tr><td style="padding:8px 14px;font-weight:600;font-size:13px;color:var(--text);background:var(--surface2);border-bottom:1px solid var(--border);border-right:2px solid var(--border);white-space:nowrap">Smart Table <span class="mat-row-type-badge" style="font-size:8px;padding:1px 5px">rating</span></td><td style="padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);border-right:1px solid var(--border)"><div class="mat-stars" style="display:flex;gap:2px;justify-content:center"><span class="mat-star " onclick="rateMatCell('szhah29','hcbl46e::Satisfaction',1,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','hcbl46e::Satisfaction',2,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','hcbl46e::Satisfaction',3,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','hcbl46e::Satisfaction',4,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','hcbl46e::Satisfaction',5,this)">★</span></div></td></tr><tr><td style="padding:8px 14px;font-weight:600;font-size:13px;color:var(--text);background:var(--surface2);border-bottom:1px solid var(--border);border-right:2px solid var(--border);white-space:nowrap">Column &amp; Wall Edit Section <span class="mat-row-type-badge" style="font-size:8px;padding:1px 5px">rating</span></td><td style="padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);border-right:1px solid var(--border)"><div class="mat-stars" style="display:flex;gap:2px;justify-content:center"><span class="mat-star " onclick="rateMatCell('szhah29','597mqn3::Satisfaction',1,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','597mqn3::Satisfaction',2,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','597mqn3::Satisfaction',3,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','597mqn3::Satisfaction',4,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','597mqn3::Satisfaction',5,this)">★</span></div></td></tr><tr><td style="padding:8px 14px;font-weight:600;font-size:13px;color:var(--text);background:var(--surface2);border-bottom:1px solid var(--border);border-right:2px solid var(--border);white-space:nowrap">Slab Parametric Rebar <span class="mat-row-type-badge" style="font-size:8px;padding:1px 5px">rating</span></td><td style="padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);border-right:1px solid var(--border)"><div class="mat-stars" style="display:flex;gap:2px;justify-content:center"><span class="mat-star " onclick="rateMatCell('szhah29','ucjizhv::Satisfaction',1,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','ucjizhv::Satisfaction',2,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','ucjizhv::Satisfaction',3,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','ucjizhv::Satisfaction',4,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','ucjizhv::Satisfaction',5,this)">★</span></div></td></tr><tr><td style="padding:8px 14px;font-weight:600;font-size:13px;color:var(--text);background:var(--surface2);border-bottom:1px solid var(--border);border-right:2px solid var(--border);white-space:nowrap">Multi-Window <span class="mat-row-type-badge" style="font-size:8px;padding:1px 5px">rating</span></td><td style="padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);border-right:1px solid var(--border)"><div class="mat-stars" style="display:flex;gap:2px;justify-content:center"><span class="mat-star " onclick="rateMatCell('szhah29','6yt1wus::Satisfaction',1,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','6yt1wus::Satisfaction',2,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','6yt1wus::Satisfaction',3,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','6yt1wus::Satisfaction',4,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','6yt1wus::Satisfaction',5,this)">★</span></div></td></tr><tr><td style="padding:8px 14px;font-weight:600;font-size:13px;color:var(--text);background:var(--surface2);border-bottom:1px solid var(--border);border-right:2px solid var(--border);white-space:nowrap">AI Drawing Manager <span class="mat-row-type-badge" style="font-size:8px;padding:1px 5px">rating</span></td><td style="padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);border-right:1px solid var(--border)"><div class="mat-stars" style="display:flex;gap:2px;justify-content:center"><span class="mat-star " onclick="rateMatCell('szhah29','30ubcms::Satisfaction',1,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','30ubcms::Satisfaction',2,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','30ubcms::Satisfaction',3,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','30ubcms::Satisfaction',4,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','30ubcms::Satisfaction',5,this)">★</span></div></td></tr><tr><td style="padding:8px 14px;font-weight:600;font-size:13px;color:var(--text);background:var(--surface2);border-bottom:1px solid var(--border);border-right:2px solid var(--border);white-space:nowrap">Takeasy <span class="mat-row-type-badge" style="font-size:8px;padding:1px 5px">rating</span></td><td style="padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);border-right:1px solid var(--border)"><div class="mat-stars" style="display:flex;gap:2px;justify-content:center"><span class="mat-star " onclick="rateMatCell('szhah29','87aik2p::Satisfaction',1,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','87aik2p::Satisfaction',2,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','87aik2p::Satisfaction',3,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','87aik2p::Satisfaction',4,this)">★</span><span class="mat-star " onclick="rateMatCell('szhah29','87aik2p::Satisfaction',5,this)">★</span></div></td></tr><tr><td style="padding:8px 14px;font-weight:600;font-size:13px;color:var(--text);background:var(--surface2);border-bottom:1px solid var(--border);border-right:2px solid var(--border);white-space:nowrap">Others <span class="mat-row-type-badge" style="font-size:8px;padding:1px 5px">short</span></td><td style="padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);border-right:1px solid var(--border)"><input class="mat-cell-short" placeholder="…" value="" oninput="updMatAnswer('szhah29','atsqjqa::Satisfaction',this.value)"></td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="s-nav" style="margin-top:28px;padding-bottom:28px">
+      <button class="btn-back" onclick="prevSlide()">↑ Back</button><button class="btn-next" onclick="nextSlide()">
+        Continue →
+      </button>
+    </div>
+  </div></div><div class="section-slide" id="sl-ts5x4bc"><div class="section-slide-inner">
+    <div class="section-header">
+      <div class="slide-num">Section · 2 questions</div>
+      <h2 style="font-family:var(--fd);font-size:clamp(20px,2.8vw,32px);font-weight:600;letter-spacing:-.5px;line-height:1.2;margin-bottom:4px;color:var(--text)">Feedback</h2>
+      
+    </div>
+    <div class="section-qs"><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">What improvements/new features would you suggest for QuantifAI?<span class="req-badge">Required</span></div>
+      
+      <textarea class="s-input" id="a-44oht5z" placeholder="Type your answer…" style="min-height:80px;resize:none" oninput="S.answers['44oht5z']=this.value;autoSaveProgress()"></textarea>
+    </div><div style="display:flex;flex-direction:column">
+      <div class="slide-q" style="font-size:clamp(17px,2.3vw,24px);margin-bottom:4px">Please say your comments on what is good about QuantifAI?<span class="req-badge">Required</span></div>
+      
+      <textarea class="s-input" id="a-4t5j8lz" placeholder="Type your answer…" style="min-height:80px;resize:none" oninput="S.answers['4t5j8lz']=this.value;autoSaveProgress()"></textarea>
+    </div></div>
+    <div class="s-nav" style="margin-top:28px;padding-bottom:28px">
+      <button class="btn-back" onclick="prevSlide()">↑ Back</button><button class="btn-next btn-submit" onclick="submitForm()">
+        Submit →
+      </button>
+    </div>
+  </div></div><div class="form-slide" id="sl-end"><div class="slide-inner" style="text-align:center;max-width:560px">
+    
+    <div class="ty-icon">🎉</div>
+    <div class="ty-title">All done! 🎉</div>
+    <p style="font-size:14px;color:var(--muted);max-width:420px;margin:0 auto 26px;line-height:1.7;animation:fadeUp .45s .25s ease both">Thank you so much for your responses.</p>
+    <div style="display:flex;gap:9px;justify-content:center;animation:fadeUp .45s .35s ease both;flex-wrap:wrap">
+      <button class="btn btn-ghost btn-sm" onclick="backToBuilder();switchTab('results')" style="font-size:13px">View results →</button>
+      <button class="btn btn-ghost btn-sm" onclick="startOver()" style="font-size:13px">Fill again</button>
+    </div>
+  </div></div></div>
 </div>
 
 <!-- Share Modal -->
 
 
-<div class="toast" id="toast">Project saved ↓</div>
+<div class="toast" id="toast">⚠️ "Compared with the previous ver..." is required</div>
 
 <script>
 /* ════════════════════════════════════════════
@@ -1876,7 +2013,7 @@ function exportHTML() {
     const PANTRY_URL = "https://getpantry.cloud/apiv1/pantry/5cb11065-c901-4c2d-a999-b170c23c7e33/basket/QuantifAI";
 
     // Inject the current form state
-    S.items = [{"id":"508s2ln","kind":"section","title":"A little about you","description":"","logic":[]},{"id":"rrhcjsh","kind":"question","type":"short","required":true,"question":"What's your name?","description":"We'd love to know who we're talking to","sectionId":"508s2ln"},{"id":"l8ftt2s","kind":"question","type":"short","required":true,"question":"Your company name","description":"Help us to know a little bit more about you","sectionId":"508s2ln"},{"id":"bboayvs","kind":"question","type":"three","required":true,"question":"What's your role? ","description":"","options":["Option A","Option B","Option C"],"icons":["Consultant QS","Contractor Office QS","Contractor Project QS"],"sectionId":"508s2ln","logic":[]},{"id":"b1tx69v","kind":"question","type":"three","required":false,"question":"Which stage(s) do you do quantity take-off?","description":"","options":["Tender Stage","Construction Stage","Tender & Construction Stage"],"icons":["","",""],"sectionId":"508s2ln"},{"id":"q8svmso","kind":"question","type":"short","required":true,"question":"How long have you been using TAS/TRB?","description":"Roughly in years or months","sectionId":"508s2ln"},{"id":"3w2vc22","kind":"section","title":"QuantifAI Overall Evaluation","description":"Tell us how it went","logic":[]},{"id":"44m4kqw","kind":"question","sectionId":"3w2vc22","type":"rating","question":"From the scale of 1-10, how satisfied are you with the QuantifAI software?","description":"10 = amazing!","ratingMax":10,"required":true},{"id":"3ehuj6c","kind":"question","type":"rating","required":true,"question":"On the scale of 1-10, how likely would you recommend QuantifAI to your friends?","description":"10 the most likely","ratingMax":10,"sectionId":"3w2vc22"},{"id":"qzdfmgq","kind":"question","type":"choice","required":true,"question":"Compared with the previous version (TAS & TRB), roughly how many times faster do you feel QuantifAI will be?","description":"","options":["Greatly faster (over 3 times)"," Obviously faster (2~3 times)"," Slightly faster (1~2 times) "],"multiple":false,"other":false,"sectionId":"3w2vc22"},{"id":"hwqmgo7","kind":"question","type":"choice","required":true,"question":"Compared with the Manual way (Excel or other way), roughly how many times faster is QuantifAI in general?","description":"","options":["Greatly faster (over 6 times)"," Obviously faster (4~6 times)"," Slightly faster (2~4 times) "],"multiple":false,"other":false,"sectionId":"3w2vc22"},{"id":"szhah29","kind":"matrix","title":"Please rate us!","description":"","columns":["Satisfaction"],"rows":[{"id":"bvpxopg","label":"2 in 1","type":"rating"},{"id":"hddyghj","label":"AI Beam Schedule","type":"rating"},{"id":"hcbl46e","label":"Smart Table","type":"rating"},{"id":"597mqn3","label":"Column & Wall Edit Section","type":"rating"},{"id":"ucjizhv","label":"Slab Parametric Rebar","type":"rating"},{"id":"6yt1wus","label":"Multi-Window","type":"rating"},{"id":"30ubcms","label":"AI Drawing Manager","type":"rating"},{"id":"87aik2p","label":"Takeasy","type":"rating"},{"id":"atsqjqa","label":"Others","type":"short"}],"required":true,"sectionId":"ts5x4bc"},{"id":"ts5x4bc","kind":"section","title":"Feedback","description":"","logic":[]},{"id":"44oht5z","kind":"question","type":"long","required":true,"question":"What improvements/new features would you suggest for QuantifAI?","description":"","sectionId":"ts5x4bc"},{"id":"4t5j8lz","kind":"question","type":"long","required":true,"question":"Please say your comments on what is good about QuantifAI?","description":"","sectionId":"ts5x4bc"}];
+    S.items = [{"id":"db42js4","kind":"question","type":"choice","required":true,"question":"Select Your Region","description":"","options":["Singapore","Hongkong"],"multiple":false,"other":false,"sectionId":"c8d9pvl"},{"id":"c8d9pvl","kind":"section","title":"Select Region","description":"","logic":[]},{"id":"508s2ln","kind":"section","title":"A little about you","description":"","logic":[]},{"id":"rrhcjsh","kind":"question","type":"short","required":true,"question":"What's your name?","description":"We'd love to know who we're talking to","sectionId":"508s2ln"},{"id":"l8ftt2s","kind":"question","type":"short","required":true,"question":"Your company name","description":"Help us to know a little bit more about you","sectionId":"508s2ln"},{"id":"bboayvs","kind":"question","type":"three","required":true,"question":"What's your role? ","description":"","options":["Option A","Option B","Option C"],"icons":["Consultant QS","Contractor Office QS","Contractor Project QS"],"sectionId":"508s2ln","logic":[]},{"id":"b1tx69v","kind":"question","type":"three","required":true,"question":"Which stage(s) do you do quantity take-off?","description":"","options":["Tender Stage","Construction Stage","Tender & Construction Stage"],"icons":["","",""],"sectionId":"508s2ln"},{"id":"q8svmso","kind":"question","type":"short","required":true,"question":"How long have you been using TAS/TRB?","description":"Roughly in years or months","sectionId":"508s2ln"},{"id":"3w2vc22","kind":"section","title":"QuantifAI Overall Evaluation","description":"Tell us how it went","logic":[]},{"id":"44m4kqw","kind":"question","sectionId":"3w2vc22","type":"rating","question":"From the scale of 1-10, how satisfied are you with the QuantifAI software?","description":"10 = amazing!","ratingMax":10,"required":true},{"id":"3ehuj6c","kind":"question","type":"rating","required":true,"question":"On the scale of 1-10, how likely would you recommend QuantifAI to your friends?","description":"10 the most likely","ratingMax":10,"sectionId":"3w2vc22"},{"id":"qzdfmgq","kind":"question","type":"choice","required":true,"question":"Compared with the previous version (TAS & TRB), roughly how many times faster do you feel QuantifAI will be?","description":"","options":["Greatly faster (over 3 times)"," Obviously faster (2~3 times)"," Slightly faster (1~2 times) "],"multiple":false,"other":false,"sectionId":"3w2vc22"},{"id":"hwqmgo7","kind":"question","type":"choice","required":true,"question":"Compared with the Manual way (Excel or other way), roughly how many times faster is QuantifAI in general?","description":"","options":["Greatly faster (over 6 times)"," Obviously faster (4~6 times)"," Slightly faster (2~4 times) "],"multiple":false,"other":false,"sectionId":"3w2vc22"},{"id":"szhah29","kind":"matrix","title":"Please rate us!","description":"","columns":["Satisfaction"],"rows":[{"id":"bvpxopg","label":"2 in 1","type":"rating"},{"id":"hddyghj","label":"AI Beam Rebar Identification","type":"rating"},{"id":"hcbl46e","label":"Smart Table","type":"rating"},{"id":"597mqn3","label":"Column & Wall Edit Section","type":"rating"},{"id":"ucjizhv","label":"Slab Parametric Rebar","type":"rating"},{"id":"6yt1wus","label":"Multi-Window","type":"rating"},{"id":"30ubcms","label":"AI Drawing Manager","type":"rating"},{"id":"87aik2p","label":"Takeasy","type":"rating"},{"id":"atsqjqa","label":"Others","type":"short"}],"required":true,"sectionId":"ts5x4bc"},{"id":"ts5x4bc","kind":"section","title":"Feedback","description":"","logic":[]},{"id":"44oht5z","kind":"question","type":"long","required":true,"question":"What improvements/new features would you suggest for QuantifAI?","description":"","sectionId":"ts5x4bc"},{"id":"4t5j8lz","kind":"question","type":"long","required":true,"question":"Please say your comments on what is good about QuantifAI?","description":"","sectionId":"ts5x4bc"}];
     S.settings = {"title":"QuantifAI Survey","accent":"#5b3ef8","font":"Syne","welcome":{"title":"Welcome! 👋","subtitle":"This form will only take a few minutes.","buttonText":"Let's go →","drawing":null},"end":{"title":"All done! 🎉","subtitle":"Thank you so much for your responses.","drawing":null}};
 
     // Force preview mode on page load
